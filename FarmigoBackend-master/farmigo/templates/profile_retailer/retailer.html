@@ -1,0 +1,64 @@
+﻿{%extends 'profile/base.html'%}
+
+
+{%block content%}
+<section id="pricing" class="padd-section text-center wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+      <br><br><br>
+        <h2>My Profile</h2>
+        <div class="table_btn">
+          <a href="{%url 'edit_profile'%}" class="btn separator">Edit your profile</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-6">
+          <div class="block-pricing">
+            <div class="table">
+              <!-- <h4></h4> -->
+              <h2>Farm Details</h2>
+              <ul class="list-unstyled">
+                <li><b>Crop</b>
+                  <ul>  
+                  </ul>
+                </li>
+                <li><b>Livestock</b>
+                 <ul>
+                  <li>Cow: 12</li>
+                  <li>Goat: 12</li>
+                </ul>
+              </li>
+                <li><b>Farm Area</b> </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+          <div class="block-pricing">
+            <div class="table">
+              <h2>Personal Details</h2>
+              <ul class="list-unstyled">
+                <li><b>Name:</b> {{user.name}} </li>
+                <li><b>Date of Birth:</b> {{user.retailer.description}} </li>
+                <li><b>Email:</b> {{user.email}}</li>
+                <li><b>Mobile no:</b> {{user.mobnumber}}</li>
+                <li><b>Address:</b> {{user.address}} </li>
+                <li><b>District:</b> {{user.district}} </li>
+                <li><b>State: </b> {{user.state}} </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{%endblock%}

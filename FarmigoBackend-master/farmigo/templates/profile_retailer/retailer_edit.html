@@ -1,0 +1,101 @@
+{%extends 'profile/base.html'%}
+{%load widget_tweaks%}
+
+{%block content%}
+<section id="pricing" class="padd-section text-center wow fadeInUp">
+
+    <div class="container">
+      <div class="section-title text-center">
+        <br><br><br><br>
+        <h2>My Profile</h2>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-6 col-lg-6">
+          <div class="block-pricing">
+            <div class="table">
+              <!-- <h4></h4> -->
+              <h2>Farm Details</h2>
+              <ul class="list-unstyled">
+                <li><b>Crop</b>
+                  <ul>
+                    <li>
+                      <input type="text" name="cropName" class="form-control" id="cropName" placeholder="Name of the Crop" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                      <input type="text" name="cropType" class="form-control" id="cropType" placeholder="Name of the Crop Type" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  </li>
+                     <input type="text" name="cropName" class="form-control" id="cropName" placeholder="Name of the Crop" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                     <input type="text" name="cropType" class="form-control" id="cropType" placeholder="Name of the Crop Type" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  </ul>
+                </li>
+                <li><b>Livestock</b>
+                 <ul>
+                  <li>
+                    <input type="text" name="livestokName" class="form-control" id="cropName" placeholder="Name of the Livestock" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="number" name="livestockNumber" class="form-control" id="cropType" placeholder="How many do you have?" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  </li>
+                  <li>
+                    <input type="text" name="livestokName" class="form-control" id="cropName" placeholder="Name of the Livestock"/>
+                    <input type="number" name="livestockNumber" class="form-control" id="cropType" placeholder="How many do you have?" />
+                  </li>
+                </ul>
+              </li>
+              </ul>
+              <div class="table_btn">
+                <a href="#" class="btn">Submit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6">
+          <div class="block-pricing">
+            <div class="table">
+			  <h2>Personal Details</h2>
+			  <form method="POST">
+				{%csrf_token%}
+				<fieldset class="form-group">
+              <ul class="list-unstyled">
+                <li>
+					{%render_field form.name class+='form-control' placeholder='Name'%}
+                </li>
+                <li>
+					{%render_field form.mobnumber class+='form-control' placeholder='Mobile Number'%}
+                </li>
+                <li>
+                    {%render_field form.email class+='form-control' placeholder='Email'%}
+                  </li>
+                <li>
+					{%render_field form_farmer.dob class+='form-control' placeholder='Date Of Birth (dd-mm-yyyy)'%}
+                </li>
+                <li>
+					{%render_field form.state class+='form-control' placeholder='State'%}
+                </li>
+                <li>
+					{%render_field form.district class+='form-control' placeholder='District'%}
+                </li>
+                <li>
+					{%render_field form.address class+='form-control' placeholder='Address'%}
+			   </li>
+				<li>
+					{%render_field form_farmer.op_land_area class+='form-control' placeholder='Operational Land Area'%}
+				</li>
+               </li>
+              </ul>
+			</fieldset>
+              <div class="table_btn form-group">
+                <button class="btn" type="submit">Edit</button>
+			  </div>
+		</form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+{%endblock%}

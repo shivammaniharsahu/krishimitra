@@ -1,0 +1,29 @@
+{%extends 'auth/auth_base.html'%}
+{%load widget_tweaks%}
+
+{%block content%}
+<span class="login100-form-title p-b-20 p-t-20">
+        Log in
+      </span>
+      
+      <div class="wrap-input100 validate-input" data-validate = "Enter username">
+        {%render_field form.username class+='input100' placeholder='Username'%}
+        <span class="focus-input100" ></span>
+      </div>
+      
+      <div class="wrap-input100 validate-input" data-validate="Enter password">
+        {%render_field form.password class+='input100' placeholder='Password'%}
+        <span class="focus-input100" ></span>
+      </div>
+      
+      <div class="container-login100-form-btn">
+        <button class="login100-form-btn form-group">
+          Login
+        </button>
+      </div>
+      
+      <div class="text-right p-t-31 p-b-0">
+        <p>Not Registered</p>
+        <a id="pp" class="txt1" href="{%url 'register'%}">Sign Up</a>
+      </div>
+{%endblock%}

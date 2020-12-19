@@ -1,0 +1,148 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+	    <!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Farmigo</title>
+
+        <link type="text/css" href="{%static 'css\profile\photo.css'%}" rel="stylesheet">
+        <link type="text/css" href="{%static 'css\profile\bootstrap.min.css'%}" rel="stylesheet">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Roboto:100,300,400,500,700|Philosopher:400,400i,700,700i" rel="stylesheet">
+      <link href="{%static 'css/profile/style.css'%}" rel="stylesheet">
+    </head>
+
+<body>
+
+    <header id="header" class="header header-hide">
+        <div class="container">
+   
+          <div id="logo" class="pull-left">
+            <h1><a href="{%url 'hom'%}" class="scrollto"><span>F</span>armigo</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="#body"><img src="img/logo.png" alt="" title="" /></a> -->
+          </div>
+   
+          <nav id="nav-menu-container">
+            <ul class="nav-menu">
+              <li><a href="{%url 'profile'%}">My profile</a></li>
+              <li><a href="{%url 'retailer'%}">Retailer</a></li>
+              <li><a href="{%url 'supplier'%}">Supplier</a></li>
+              <li><a href="#chat">Chat</a></li>
+              <li><a href="{%url 'weather'%}">Weather</a></li>
+              <li><a href="{%url 'mandi'%}">Live Mandi Prices</a></li>
+              <li><a href="{%url 'soil'%}">Soil Testing Labs</a></li>
+              <li>
+                <a href="">Blogs</a>
+                <ul>
+                  <li><a href="{%url 'blog1'%}">Case Study on Rabi</a></li>
+                  <li><a href="{%url 'blog2'%}">Milk Wholesale Price Index</a></li>
+                </ul>
+              </li>
+              <li><a href="">language</a>
+                <ul>
+                  <li><a href="#">Hindi</a></li>
+                  <li><a href="#">Urdu</a></li>
+                  <li><a href="#">Odia</a></li>
+                  <li><a href="#">Telgu</a></li>
+                </ul>
+              </li>
+   
+            </ul>
+          </nav><!-- #nav-menu-container -->
+        </div>
+   
+      </header><!-- #header -->
+
+   <!-- </header> -->
+
+   {%block content%}
+   {%endblock%}
+
+   <footer class="footer">
+     <div class="container">
+       <div class="row">
+
+         <div class="col-md-12 col-lg-4">
+           <div class="footer-logo">
+
+             <a class="navbar-brand" href="#">Farmigo</a>
+             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
+
+           </div>
+         </div>
+
+         <div class="col-sm-6 col-md-3 col-lg-2">
+           <div class="list-menu">
+
+             <h4></h4>
+
+           </div>
+         </div>
+
+         <div class="col-sm-6 col-md-3 col-lg-2">
+           <div class="list-menu">
+
+           </div>
+         </div>
+
+         <div class="col-sm-6 col-md-3 col-lg-2">
+           <div class="list-menu">
+
+             <h4>Top Features</h4>
+
+             <ul class="list-unstyled">
+               <li><a href="#">Weather Forecast</a></li>
+               <li><a href="#">language Translation</a></li>
+               <li><a href="#">Ad - policy</a></li>
+               <li><a href="#">SMS Service</a></li>
+             </ul>
+
+           </div>
+         </div>
+
+         <div class="col-sm-6 col-md-3 col-lg-2">
+           <div class="list-menu">
+
+             <h4>Support</h4>
+
+             <ul class="list-unstyled">
+               <li><a href="#">faq</a></li>
+               <li><a href="#">Editor help</a></li>
+               <li><a href="#">Contact us</a></li>
+               <li><a href="#">Privacy Policy</a></li>
+             </ul>
+
+           </div>
+         </div>
+
+       </div>
+     </div>
+
+   </footer>
+   <script src="{%static 'js/profile/jquery.min.js'%}"></script>
+  <script src="{%static 'js/profile/jquery-migrate.min.js'%}"></script>
+  <script src="{%static 'js/profile/bootstrap.bundle.min.js'%}"></script>
+  <script src="{%static 'js/profile/hoverIntent.js'%}"></script>
+  <script src="{%static 'js/profile/superfish.min.js'%}"></script>
+  <script src="{%static 'js/profile/easing.min.js'%}"></script>
+  <script src="{%static 'js/profile/modal-video.j'%}s"></script>
+  <script src="{%static 'js/profile/owl.carousel.min.js'%}"></script>
+  <script src="{%static 'js/profile/wow.min.js'%}"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="{%static 'js/profile/contactform.js'%}"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="{%static 'js/profile/main.js'%}"></script>
+  </body>
+</html>
+
+
+{%block script%}
+{%endblock%}

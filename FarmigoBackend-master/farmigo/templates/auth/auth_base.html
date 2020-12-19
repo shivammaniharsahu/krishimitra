@@ -1,0 +1,80 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Signup</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{%static 'msc/register/favicon.ico'%}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%static 'css/register/bootstrap.min.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%static 'css/register/material-design-iconic-font.min.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%static 'css/register/animate.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%static 'css/register/hamburgers.min.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%static 'css/register/animsition.min.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%static 'css/register/select2.min.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{%static 'css/register/daterangepicker.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="Login_v3/Login_v3/css/util.css">
+	<link rel="stylesheet" type="text/css" href="{%static 'css/register/Signup.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.com/ajax/libs/font-awesome/4.7.0/font-awesome.css">
+
+
+    <!-- =======Script for state and distt. =================== -->
+
+
+</head>
+<body>
+	{% if messages %}
+		{% for message in messages %}
+			<div class="alert alert-{{message.tags}}">
+				{{ message }}
+			</div>
+		{% endfor %}
+	{% endif %}
+
+	<div class="limiter">
+		<div class="container-login100">
+		<div class="wrap-login100">
+					<span class="login100-form-logo">
+						<img id="src" src="{%static 'msc/register/logo.png'%}">
+					</span>
+					
+
+			<form method="POST">
+						{%csrf_token%}
+					{%block content%}
+					{%endblock%}
+			</form>
+					</div>
+			</div>
+		</div>
+	</div>
+	
+<!--===============================================================================================-->
+	<script src="{%static 'js/register/jquery-3.2.1.min.js'%}"></script>
+<!--===============================================================================================-->
+	<script src="{%static 'js/register/animsition.min.js'%}"></script>
+<!--===============================================================================================-->
+	<script src="{%static 'js/register/popper.js'%}"></script>
+	<script src="{%static 'js/register/bootstrap.min.js'%}"></script>
+<!--===============================================================================================-->
+	<script src="{%static 'js/register/select2.min.js'%}"></script>
+<!--===============================================================================================-->
+	<script src="{%static 'js/register/moment.min.js'%}"></script>
+	<script src="{%static 'js/register/daterangepicker.js'%}"></script>
+<!--===============================================================================================-->
+	<script src="{%static 'js/register/countdowntime.js'%}"></script>
+<!--===============================================================================================-->
+	<script src="{%static 'js/register/main2.js'%}"></script>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+{%extends 'auth/auth_base.html'%}
+{%load widget_tweaks%}
+
+{%block content%}
+<span class="login100-form-title p-b-20 p-t-20">
+        Sign Up
+    </span>
+<fieldset class="form-group">
+        <div class="validate-input" style="padding-top: 30px; padding-bottom: 20px">
+        {%render_field form.user_type class+='input100' placeholder='User Type'%}
+        </div>
+    <div class="wrap-input100 validate-input">
+        {%render_field form.name class+='input100' placeholder='Name'%}
+        <span class="focus-input100"></span>
+    </div>
+     <div class="wrap-input100 validate-input">
+        {%render_field form.email class+='input100' placeholder='Email'%}
+        <span class="focus-input100"></span>
+    </div>
+    <div class="wrap-input100 validate-input">
+        {%render_field form.mobnumber class+='input100' placeholder='Mobile Number'%}
+        <span class="focus-input100"></span>
+    </div>
+    <div class="wrap-input100 validate-input">
+        {%render_field form.password1 class+='input100' placeholder='Password'%}
+        <span class="focus-input100"></span>
+    </div>
+    <div class="wrap-input100 validate-input">
+        {%render_field form.password2 class+='input100' placeholder='Confirm Password'  help_test='Your password must contain at least 8 characters.'%}
+        <span class="focus-input100"></span>
+    </div>
+    <div class="wrap-input100 validate-input">
+            {%render_field form.state class+='input100' placeholder='State'%}
+            <span class="focus-input100"></span>
+    </div>
+    <div class="wrap-input100 validate-input">
+            {%render_field form.district class+='input100' placeholder='District'%}
+            <span class="focus-input100"></span>
+    </div>
+    <div class="wrap-input100 validate-input">
+            {%render_field form.address class+='input100' placeholder='Address'%}
+            <span class="focus-input100"></span>
+    </div>
+</fieldset>
+    <div class="container-login100-form-btn form-group">
+        <button class="login100-form-btn" type='submit'>Register</button>
+    </div> 
+{%endblock%}
