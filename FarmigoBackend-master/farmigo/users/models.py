@@ -19,6 +19,7 @@ class BaseUser(AbstractUser):
 
     def save(self, *args, **kwargs):
         self.username = self.mobnumber
+       # user = models.ForiegnKey(username)
         super(BaseUser, self).save(*args, **kwargs)
 
     class Meta:
