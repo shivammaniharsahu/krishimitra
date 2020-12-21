@@ -5,112 +5,17 @@
   <div class="container">
     <div class="section-title text-center">
       <h2>Weather Forecast</h2>
-      <p class="separator">Today's Weather Forecast</p>
+      <p class="separator">1 Week Weather Forecast</p>
     </div>
   </div>
-  <div class="container-fluid">
-   <!-- <div class="row"> -->
- <div class="col-lg-3">
-   <a href="#">
-   <div class="storybox" style="background: linear-gradient( rgba(34,34,34,0.78), rgba(34,34,34,0.78)), url('https://media.giphy.com/media/l41YePgsv92CTdTVe/giphy.gif') no-repeat; background-size: cover; background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
-        <div class="story-body text-center">
-         <div class=""><img class="img-circle" src="https://st2.depositphotos.com/3921439/7427/v/950/depositphotos_74277661-stock-illustration-the-thermometer-icon-high-temperature.jpg" alt="user"></div>
-         <br>
-         <h4>Temperature: <span id="temp"></span> *C</h4>
-         <!-- <h4><span id="desc"></span></h4> -->
-        </div>
-   </div>
-   </div>
-   </a>
 
-   <a href="#">
- <div class="col-lg-3">
-   <div class="storybox" style="background: linear-gradient( rgba(34,34,34,0.78), rgba(34,34,34,0.78)), url('https://media.giphy.com/media/l41YePgsv92CTdTVe/giphy.gif') no-repeat; background-size: cover; background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
-        <div class="story-body text-center">
-         <div class=""><img class="img-circle" src="https://t4.ftcdn.net/jpg/01/09/71/63/240_F_109716319_pcEYqzgR7UlJExxsUU84IynFHzCc8SIn.jpg" alt="user"></div>
-         <br>
-         <h4>Wind Speed: <span id="wind"></span> kmph</h4>
-        </div>
-   </div>
-   </div>
-   </a>
-
-   <a href="#">
- <div class="col-lg-3">
-   <div class="storybox" style="background: linear-gradient( rgba(34,34,34,0.78), rgba(34,34,34,0.78)), url('https://media.giphy.com/media/l41YePgsv92CTdTVe/giphy.gif') no-repeat; background-size: cover; background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
-        <div class="story-body text-center">
-         <div class=""><img class="img-circle" src="https://icon-library.net/images/humidity-icon/humidity-icon-24.jpg" alt="user"></div>
-         <br>
-         <h4>Humidity: <span id = "humidity"></span>%</h4>
-        </div>
-   </div>
-   </div>
-   </a>
-
-   <a href="#">
-   <div class="col-lg-3">
-   <div class="storybox" style="background: linear-gradient( rgba(34,34,34,0.78), rgba(34,34,34,0.78)), url('https://media.giphy.com/media/l41YePgsv92CTdTVe/giphy.gif') no-repeat; background-size: cover; background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover;">
-        <div class="story-body text-center">
-         <div class=""><img class="img-circle" src="https://f4.bcbits.com/img/a1118920635_10.jpg" alt="user"></div>
-         <br>
-         <h4>Chances of rain: <span id = "chancesofrain"></span>%</</h4>
-         <p></p>
-        </div>
-        </div>
-   </div>
-   </a>
-   </div>
-<!--/ col-lg-3 -->
+<a class="weatherwidget-io" href="https://forecast7.com/en/21d2581d63/raipur/" data-label_1="RAIPUR" data-label_2="WEATHER" data-theme="original" >RAIPUR WEATHER</a><!--/ col-lg-3 -->
 
 {%endblock%}
 
 {%block script%}
+
 <script>
-  // geolocation
-  var SaraData;
-var Geo={};
-if (navigator.geolocation) {
-navigator.geolocation.getCurrentPosition(success,error);
-}
-else {
-alert('Geolocation is not supported');
-}
-function success(position) {
-  Geo.lat = position.coords.latitude;
-  Geo.lng = position.coords.longitude;
-  var key = "b2f02b27268444d8b3070408201912";
-
-  var Weather = `http://api.weatherapi.com/v1/current.json?key=b2f02b27268444d8b3070408201912&q=London`
-
-
-  $.ajax({
-    url : Weather,
-    dataType : "jsonp",
-    success : function(data) {
-      console.log(data);
-
-      console.log("hello");
-      var temp = data['data']['current_condition']['0']['temp_C'];
-      // var img = data['data']['current_condition']['weatherIconUrl'];
-      var desc = data['data']['current_condition'][0]['weatherDesc'][0]['value'];
-      var wind = data.data['current_condition'][0]['windspeedKmph'];
-      var humidity = data.data['current_condition'][0]['humidity'];
-      var chancesofrain = data.data['weather'][0]['hourly'][0]['chanceofrain'];
-      $('#temp').html(temp);
-      // $('#desc').html(desc);
-      $('#wind').html(wind);
-      $('#humidity').html(humidity);
-      $('#chancesofrain').html(chancesofrain);
-//filling the image src attribute with the image url
-    // $('#img').attr('src', img);
-    }
-    });
-
-}
-function error() {
-alert("That's weird! We couldn't find you!");
-}
-
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
 </script>
-
 {%endblock%}

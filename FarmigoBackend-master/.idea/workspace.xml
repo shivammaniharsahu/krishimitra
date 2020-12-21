@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7a6093a-8c69-41ec-a4b4-ad4a2d6da56f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/farmigo/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/farmigo/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/farmigo/templates/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/farmigo/templates/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/farmigo/templates/blogs/blog1.html" beforeDir="false" afterPath="$PROJECT_DIR$/farmigo/templates/blogs/blog1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/farmigo/templates/blogs/blog2.html" beforeDir="false" afterPath="$PROJECT_DIR$/farmigo/templates/blogs/blog2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/farmigo/templates/liveMandiData.html" beforeDir="false" afterPath="$PROJECT_DIR$/farmigo/templates/liveMandiData.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/farmigo/templates/profile/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/farmigo/templates/profile/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/farmigo/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/farmigo/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/farmigo/templates/weatherForecast.html" beforeDir="false" afterPath="$PROJECT_DIR$/farmigo/templates/weatherForecast.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,56 +19,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/farmigo/users/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/farmigo/templates/blogs/blog1hindi.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/farmigo/farmigo/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1955">
+            <state relative-caret-position="454">
               <caret line="115" selection-start-line="115" selection-end-line="115" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/farmigo/users/admin.py">
+        <entry file="file://$PROJECT_DIR$/farmigo/templates/blogs/blog1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/farmigo/templates/blogs/blog1hindi.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/farmigo/templates/profile/farmerRetailer.html">
+        <entry file="file://$PROJECT_DIR$/env/lib/site-packages/django/template/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3134">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="1539">
+              <caret line="526" selection-start-line="526" selection-end-line="526" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/farmigo/templates/profile/farmerSupplier.html">
+        <entry file="file://$PROJECT_DIR$/farmigo/templates/blogs/blog2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2125">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="17">
+              <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -75,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/farmigo/templates/index2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3698">
-              <caret line="227" column="258" selection-start-line="227" selection-start-column="258" selection-end-line="227" selection-end-column="258" />
+            <state>
+              <caret selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -84,18 +71,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/farmigo/templates/profile/farmer_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-306" />
+            <state relative-caret-position="-204" />
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/farmigo/templates/profile/base.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/farmigo/templates/liveMandiData.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="374">
+              <caret line="25" column="163" selection-start-line="25" selection-start-column="163" selection-end-line="25" selection-end-column="163" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/farmigo/templates/weatherForecast.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -118,17 +111,20 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/farmigo/users/views.py" />
-        <option value="$PROJECT_DIR$/farmigo/templates/weatherForecast.html" />
         <option value="$PROJECT_DIR$/farmigo/users/models.py" />
         <option value="$PROJECT_DIR$/farmigo/farmigo/settings.py" />
         <option value="$PROJECT_DIR$/farmigo/templates/index2.html" />
+        <option value="$PROJECT_DIR$/farmigo/templates/liveMandiData.html" />
         <option value="$PROJECT_DIR$/farmigo/templates/profile/base.html" />
+        <option value="$PROJECT_DIR$/farmigo/templates/blogs/blog1.html" />
+        <option value="$PROJECT_DIR$/farmigo/templates/blogs/blog2.html" />
+        <option value="$PROJECT_DIR$/farmigo/templates/weatherForecast.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="745" />
-    <option name="y" value="5" />
+    <option name="x" value="786" />
+    <option name="y" value="48" />
     <option name="width" value="1030" />
     <option name="height" value="980" />
   </component>
@@ -154,6 +150,12 @@
               <item name="FarmigoBackend-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="FarmigoBackend-master" type="462c0819:PsiDirectoryNode" />
               <item name="farmigo" type="462c0819:PsiDirectoryNode" />
+              <item name="env" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FarmigoBackend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FarmigoBackend-master" type="462c0819:PsiDirectoryNode" />
+              <item name="farmigo" type="462c0819:PsiDirectoryNode" />
               <item name="farmigo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -166,7 +168,21 @@
               <item name="FarmigoBackend-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="FarmigoBackend-master" type="462c0819:PsiDirectoryNode" />
               <item name="farmigo" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FarmigoBackend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FarmigoBackend-master" type="462c0819:PsiDirectoryNode" />
+              <item name="farmigo" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FarmigoBackend-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FarmigoBackend-master" type="462c0819:PsiDirectoryNode" />
+              <item name="farmigo" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FarmigoBackend-master" type="b2602c69:ProjectViewProjectNode" />
@@ -225,8 +241,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22523117" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23778072" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -237,7 +254,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.41584158" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.27439886" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -262,41 +279,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/farmigo/templates/blogs/blog2.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/farmigo/templates/blogs/blog1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/farmigo/templates/soilTesting.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/farmigo/templates/weatherForecast.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/farmigo/env/Lib/site-packages/django/db/backends/sqlite3/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6494">
           <caret line="412" selection-start-line="412" selection-end-line="412" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/farmigo/templates/liveMandiData.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
         </state>
       </provider>
     </entry>
@@ -310,20 +296,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/farmigo/farmigo/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1955">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/farmigo/templates/profile/farmer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/farmigo/users/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -333,42 +305,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/farmigo/templates/blogs/blog1hindi.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/farmigo/templates/profile/farmer_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/farmigo/templates/profile/farmerRetailer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3134">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/farmigo/templates/profile/farmerSupplier.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2125">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/farmigo/templates/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3698">
-          <caret line="227" column="258" selection-start-line="227" selection-start-column="258" selection-end-line="227" selection-end-column="258" />
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/farmigo/templates/profile/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="71" column="56" selection-start-line="71" selection-start-column="56" selection-end-line="71" selection-end-column="56" />
+        <state relative-caret-position="-1283">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farmigo/templates/soilTesting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farmigo/templates/profile/farmer_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farmigo/templates/blogs/blog1hindi.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farmigo/templates/profile/farmer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farmigo/templates/liveMandiData.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="163" selection-start-line="25" selection-start-column="163" selection-end-line="25" selection-end-column="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/env/lib/site-packages/django/template/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1539">
+          <caret line="526" selection-start-line="526" selection-end-line="526" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farmigo/templates/blogs/blog1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farmigo/templates/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farmigo/templates/blogs/blog2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farmigo/templates/weatherForecast.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/farmigo/farmigo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
         </state>
       </provider>
     </entry>

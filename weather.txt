@@ -1,0 +1,98 @@
+  var SaraData;
+var Geo={};
+if (navigator.geolocation) {
+navigator.geolocation.getCurrentPosition(success,error);
+}
+else {
+alert('Geolocation is not supported');
+}
+function success(position) {
+  Geo.lat = position.coords.latitude;
+  Geo.lng = position.coords.longitude;
+  var key = "b2f02b27268444d8b3070408201912";
+
+  var Weather = `http://api.weatherapi.com/v1/current.json?key=b2f02b27268444d8b3070408201912&q=London`
+
+
+  $.ajax({
+    type: 'GET',
+    url : 'http://api.weatherapi.com/v1/current.json?key=b2f02b27268444d8b3070408201912&q=Delhi' ,
+    dataType : "jsonp",
+    async:false,
+    success : function(data) {
+      console.log(data);
+
+      console.log("hello");
+      var temp = data['data']['current_condition']['0']['temp_C'];
+      // var img = data['data']['current_condition']['weatherIconUrl'];
+      var desc = data['data']['current_condition'][0]['weatherDesc'][0]['value'];
+      var wind = data.data['current_condition'][0]['windspeedKmph'];
+      var humidity = data.data['current_condition'][0]['humidity'];
+      var chancesofrain = data.data['weather'][0]['hourly'][0]['chanceofrain'];
+      $('#temp').html(temp);
+      // $('#desc').html(desc);
+      $('#wind').html(wind);
+      $('#humidity').html(humidity);
+      $('#chancesofrain').html(chancesofrain);
+//filling the image src attribute with the image url
+    // $('#img').attr('src', img);
+    }
+    });
+
+}
+function error() {
+console.log(data);
+alert("That's weird! We couldn't find you!");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  // geolocation
+function getWeatherContent(callback) {
+    $.ajax({
+        type: 'GET',
+        url: 'https://api.forecast.io/forecast/02eb002028b663d6a8784ae534127171/35.685,139.7513889',
+        async: false,
+        dataType: 'jsonp',
+        success: function(data){
+            callback(data);
+        }
+    });
+}
+
+// Adding Information from our Ajax request.
+
+getWeatherContent(function(details){
+    console.log(details);
+
+    // Take the current Temp from currently object and from Farenh transform it to Cels temp.
+        var currentTemperature = details.currently['temperature'];
+
+    // Calculate F to C by using JavaScript formula -> C = (F- 32) * (5/9).
+    // Round the value to nearest integer.
+        var celsFormula = Math.round((currentTemperature - 32) * (5/9));
+
+
+    // Append Real-Time Degree to an HTML
+        $('.degree').html('<p>' + celsFormula + '&deg;C' + '</p>');
+
+
+});
+
+</script>

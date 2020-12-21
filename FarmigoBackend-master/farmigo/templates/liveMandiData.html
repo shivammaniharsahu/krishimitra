@@ -27,6 +27,7 @@ $(document).ready(function(){
    dataType:"text",
    success:function(data)
    {
+
     var employee_data = data.split(/\r?\n|\r/);
     var table_data = '<table class="table table-bordered table-striped">';
     for(var count = 0; count<employee_data.length; count++)
@@ -35,6 +36,10 @@ $(document).ready(function(){
      table_data += '<tr>';
      for(var cell_count=0; cell_count<cell_data.length; cell_count++)
      {
+
+   console.log(cell_data[cell_count]);
+
+
       if(count === 0)
       {
        table_data += '<th>'+cell_data[cell_count]+'</th>';
